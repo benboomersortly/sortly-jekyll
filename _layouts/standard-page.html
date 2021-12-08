@@ -11,11 +11,11 @@
   <body>
     <div class="container-fluid">
       <div class="container-fluid">
-        {% if site.data.discounts.controller.global-discount.discount %}
+        {% if site.data.banner.controller.active == true %}
           <div class="row">
             <div class="col-12">
               <div class="promotional-banner py-2 text-center">
-                <a href="#">{{site.data.discounts.controller.global-discount.discount.text}} &rarr;</a>
+                <a href="{{site.data.banner.controller.href}}">{{site.data.banner.controller.text}} &rarr;</a>
               </div>
             </div>
           </div>
