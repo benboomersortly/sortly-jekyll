@@ -3,3 +3,11 @@ login:
 
 free-flow:
   href: "https://app.sortly.com/registration/"
+
+advanced:
+  monthly-href: "https://app.sortly.com/registration?plan=advanced&trial=true&interval=month"
+  yearly-href: "https://app.sortly.com/registration?plan=advanced&trial=true&interval=year"
+
+ultra:
+  monthly-href: "https://app.sortly.com/registration?plan=ultra&trial=true&interval=month"
+  yearly-href: "https://app.sortly.com/registration?plan=ultra&trial=true&interval=year"
