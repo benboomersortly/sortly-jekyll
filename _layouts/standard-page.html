@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, user-scalable=0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    
+    <title>{% if page.title %}{{page.title}}{% else %}NOTITLE{% endif %} | Sortly</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container-fluid">
+        {% if site.data.discounts.controller.global-discount.discount %}
+          <div class="row">
+            <div class="col-12">
+              <div class="promotional-banner py-2 text-center">
+                <a href="#">{{site.data.discounts.controller.global-discount.discount.text}} &rarr;</a>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+      <div class="container pt-5">
+          {% include navigations/standard-nav.html %} 
+      </div>
+	    {{ content }}  
+    </div>
+  </body>
+  {% include /footers/standard-footer.html %}
+</html>

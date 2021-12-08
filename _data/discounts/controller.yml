@@ -1,0 +1,4 @@
+global-discount:
+  discount: 
+    percent-off: 20
+    text: "This is what the text will be"
