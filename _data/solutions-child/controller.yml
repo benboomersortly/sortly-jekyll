@@ -1,0 +1,28 @@
+automotive: 
+  hero: 
+    bullets: 
+      0: 
+        item: "Never run out of essential parts"
+      1: 
+        item: "Easily track expiration dates and warranty ends"
+      2: 
+        item: "Find out what’s where in an instant, even across multiple shops"
+    h1: "The smartest automotive inventory software. Ever."
+    sub: "Your shop should be focused on fixing cars—not searching for parts."
+  features: 
+    0: 
+      h2: "Visualize all your auto parts on your Sortly dashboard"
+      sub: "Sortly’s auto parts inventory management software ensures you know exactly what’s where, and how much you’ve got."
+      bullets:
+        0: 
+          item: "0 and 0"
+        1: 
+          item: "0 and 1"
+    1:
+      h2: "Visualize all your auto parts on your Sortly dashboard!"
+      sub: "Sortly’s auto parts inventory management software ensures you know exactly what’s where, and how much you’ve got."
+      bullets:
+        0: 
+          item: "0 and 0"
+        1: 
+          item: "0 and 1"

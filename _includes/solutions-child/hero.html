@@ -1,0 +1,31 @@
+{% assign solution-var = site.data.solutions-child.controller[include.data] %}
+<div class="row pt-5">
+    <div class="col-12 col-lg-5">
+        <h1>{{site.data.solutions-child.controller[include.data]hero.h1}}</h1>
+        <p class="description pt-4">{{site.data.solutions-child.controller[include.data]hero.sub}}</p>
+        <a id="homepage-cta-button" class="btn-hero" href="{{site.data.app-links.controller.free-flow.href}}" role="button">Try Sortly Free</a>
+        <a id="homepage-cta-button" class="btn-hero-light" href="/pricing/" role="button">See All Plans</a>
+
+    </div>
+    <div class="col-12 offset-lg-1 col-lg-6 my-auto">
+        <img class="img-fluid" src="/assets/images/hero/construction-worker@2x.png" />
+    </div>
+</div>
+
+<div class="row py-3">
+    {% for thing in solution-var.hero.bullets %}
+            <div class="col-12 col-md-4">
+                <div class="row">
+                <div class="col-1">                
+                    <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M10.0043 19.4422C15.2108 19.4422 19.4315 15.2215 19.4315 10.0151C19.4315 4.80858 15.2108 0.587891 10.0043 0.587891C4.79784 0.587891 0.577148 4.80858 0.577148 10.0151C0.577148 15.2215 4.79784 19.4422 10.0043 19.4422Z" fill="#5454D4"/>
+                        <path d="M9.21651 13.1583C9.07545 13.1583 8.93467 13.1053 8.82695 12.9991L6.2334 10.4427L7.01251 9.67443L9.21651 11.8469L13.6245 7.50195L14.4036 8.27019L9.60606 12.9991C9.49834 13.1053 9.35756 13.1583 9.21651 13.1583Z" fill="#5454D4"/>
+                    </svg>
+                </div>
+                <div class="col-10">
+                    {{thing[1].item}}
+                </div>
+                </div>
+            </div>
+    {% endfor %}
+</div>
