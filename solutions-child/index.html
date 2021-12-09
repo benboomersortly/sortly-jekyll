@@ -2,46 +2,48 @@
 title: Example
 description: Here it is.
 layout: standard-page
-solution-key: automotive
+
 ---
 <section>
     <div class="container">
-        {% include /solutions-child/hero.html data="automotive" %}
+        {% include /components/heroes/standard-hero.html data="automotive" %}
     </div>
 </section>
 
 <section class="py-5">
   <div class="container">
-    <div class="row">
-      {% include /logo-strips/large.html %}
+      {% include /components/logo-strips/large.html %}
   </div>
 </section>
 
-{% include /solutions-child/features-split-top.html %}
+<section class="py-5">
+  <div class="container">
+    {% include /components/features/features-split.html data="automotive" %}
+  </div>
+</section>
 
 <section>
 {% assign testimonial-lookup = site.data.testimonials.controller[page.solution-key] %}
 <h2>{{testimonial-lookup.name}}</h2>
 </section>
 
-{% include /solutions-child/features-split-bottom.html %}
+<section class="py-5">
+  <div class="container">
+    {% include /components/features/features-split.html data="automotive" %}
+  </div>
+</section>
 
-<section>
-  {% include /solutions-child/features-grid.html %}
+<section class="py-5">
+  <div class="container">
+    {% include /components/features/features-grid.html data="automotive" %}
+  </div>
 </section>
 
 
-<div class="container my-5">
-  <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center text-center rounded-3 border shadow-lg">
-    <div class="col-12 p-3 p-lg-5 pt-lg-3">
-      <h2>Ready to Get Organized</h1>
-      <p>Here is some compelling copy.</p>
-      <div>
-        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">See All Plans</button>
-      </div>
-    </div>
+<section class="py-5">
+  <div class="container">
+    {% include /components/ctas/standard.html data="automotive" %}
   </div>
-</div>
-
+</section>
 
 

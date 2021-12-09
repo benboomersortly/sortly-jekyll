@@ -4,121 +4,33 @@ description: Here it is.
 layout: standard-page
 ---
 <section>
-    <div class="container">
-        <div class="row pt-5">
-            <div class="col-12 col-md-5">
-                <h1>Simple inventory management software</h1>
-                <p class="description py-4">The best inventory software for small businesses to stay on top of their inventory, assets, and more.</p>
-                <a id="homepage-cta-button" class="btn-hero" href="{{site.data.app-links.controller.free-flow.href}}" role="button">Try Sortly Free</a>
-                <a id="homepage-cta-button" class="btn-hero-light" href="/pricing/" role="button">See All Plans</a>
-
-            </div>
-            <div class="col-12 offset-md-1 col-md-6">
-                <img class="img-fluid" src="/assets/images/hero/construction-worker@2x.png" />
-            </div>
-        </div>
-    </div>
+  <div class="container pt-5">
+      {% include /components/heroes/standard-hero.html data="homepage" %}
+  </div>
 </section>
+
+<section class="py-5">
+  <div class="container-sm">
+      {% include /components/logo-strips/large.html %}
+</section>
+
 <section class="py-5">
   <div class="container">
-    <div class="row">
-      {% include /logo-strips/large.html %}
+    {% include /components/features/features-split.html data="homepage" image-float="left" %}
   </div>
 </section>
 
 <section class="py-5">
   <div class="container">
-    <div class="row align-items-center justify-content-between mb-8 mb-md-11">
-      <div class="col-12 col-md-5 order-md-1">
-        <h2>This is the H2</h2>
-
-        <!-- Text -->
-        <p class="mb-6">
-          Using Landkit to build your site means never worrying about designing another page or cross browser compatibility. Our ever-growing library of components and pre-designed layouts will make your life easier.
-        </p>
-
-        <!-- List -->
-        <div class="row">
-          <div class="col-12">
-            <div class="d-flex">
-              <p class="feature-bullets">
-                Lifetime updates
-              </p>
-            </div>
-            <div class="d-flex">
-              <p class="feature-bullets">
-                Lifetime updates
-              </p>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="d-flex">
-              <p class="feature-bullets">
-                Lifetime updates
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-12 col-md-6 order-md-2 aos-init aos-animate" data-aos="fade-right">
-        <img class="img-fluid" src="/assets/images/hero/construction-worker@2x.png" />
-      </div>
-    </div>
+    {% include /components/features/features-grid.html data="homepage" %}
   </div>
 </section>
+
 
 <section class="py-5">
   <div class="container">
-    <div class="row align-items-center justify-content-between mb-8 mb-md-11">
-      <div class="col-12 col-md-5 order-md-2">
-        <h2>This is the H2</h2>
-
-        <!-- Text -->
-        <p class="mb-6">
-          Using Landkit to build your site means never worrying about designing another page or cross browser compatibility. Our ever-growing library of components and pre-designed layouts will make your life easier.
-        </p>
-        <div class="row">
-          <div class="col-12">
-            <div class="d-flex">
-              <p class="feature-bullets">
-                Lifetime updates
-              </p>
-            </div>
-            <div class="d-flex">
-              <p class="feature-bullets">
-                Lifetime updates
-              </p>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="d-flex">
-              <p class="feature-bullets">
-                Lifetime updates
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-12 col-md-6 order-md-1" data-aos="fade-right">
-        <img class="img-fluid" src="/assets/images/hero/construction-worker@2x.png" />
-      </div>
-    </div>
+    {% include /components/ctas/standard.html data="homepage" %}
   </div>
 </section>
-
-<div class="container my-5">
-  <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center text-center rounded-3 border shadow-lg">
-    <div class="col-12 p-3 p-lg-5 pt-lg-3">
-      <h2>Ready to Get Organized</h1>
-      <p>Here is some compelling copy.</p>
-      <div>
-        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">See All Plans</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 
