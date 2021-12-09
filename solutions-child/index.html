@@ -2,6 +2,7 @@
 title: Example
 description: Here it is.
 layout: standard-page
+solution-key: automotive
 ---
 <section>
     <div class="container">
@@ -16,7 +17,18 @@ layout: standard-page
   </div>
 </section>
 
-{% include /solutions-child/features.html %}
+{% include /solutions-child/features-split-top.html %}
+
+<section>
+{% assign testimonial-lookup = site.data.testimonials.controller[page.solution-key] %}
+<h2>{{testimonial-lookup.name}}</h2>
+</section>
+
+{% include /solutions-child/features-split-bottom.html %}
+
+<section>
+  {% include /solutions-child/features-grid.html %}
+</section>
 
 
 <div class="container my-5">

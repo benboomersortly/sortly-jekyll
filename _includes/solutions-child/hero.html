@@ -1,8 +1,8 @@
-{% assign solution-var = site.data.solutions-child.controller[include.data] %}
+{% assign solution-var = site.data.solutions-child.controller[page.solution-key] %}
 <div class="row pt-5">
     <div class="col-12 col-lg-5">
-        <h1>{{site.data.solutions-child.controller[include.data]hero.h1}}</h1>
-        <p class="description pt-4">{{site.data.solutions-child.controller[include.data]hero.sub}}</p>
+        <h1>{{site.data.solutions-child.controller[page.solution-key]hero.h1}}</h1>
+        <p class="description pt-4">{{site.data.solutions-child.controller[page.solution-key]hero.sub}}</p>
         <a id="homepage-cta-button" class="btn-hero" href="{{site.data.app-links.controller.free-flow.href}}" role="button">Try Sortly Free</a>
         <a id="homepage-cta-button" class="btn-hero-light" href="/pricing/" role="button">See All Plans</a>
 
