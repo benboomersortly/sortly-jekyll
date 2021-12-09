@@ -23,6 +23,6 @@ automotive:
       sub: "Sortly’s auto parts inventory management software ensures you know exactly what’s where, and how much you’ve got."
       bullets:
         0: 
-          item: "0 and 0"
+          item: "1 and 0"
         1: 
-          item: "0 and 1"
+          item: "1 and 1"

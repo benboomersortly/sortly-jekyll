@@ -9,11 +9,13 @@
                 </p>
         <div class="row">
         <div class="col-12">
-            <div class="d-flex">
-            <p class="feature-bullets">
-                {{thing[1].bullets}}
-            </p>
-            </div>
+            {% for feature-bullet-list in thing[1].bullets %}
+                <div class="d-flex">
+                <p class="feature-bullets">
+                {{feature-bullet-list[1].item}}
+                </p>
+                </div>
+            {% endfor %}
         </div>
         </div>
     </div>
