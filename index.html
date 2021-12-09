@@ -4,8 +4,8 @@ description: Here it is.
 layout: standard-page
 ---
 <section>
-  <div class="container pt-5">
-      {% include /components/heroes/standard-hero.html data="homepage" %}
+  <div class="container">
+      {% include /components/heroes/standard-hero.html data="homepage" cluster="cluster-visual" %}
   </div>
 </section>
 
@@ -14,18 +14,30 @@ layout: standard-page
       {% include /components/logo-strips/large.html %}
 </section>
 
+{% include /components/features/big-story.html data="homepage" cluster="cluster-big-story" %}
+
 <section class="py-5">
   <div class="container">
-    {% include /components/features/features-split.html data="homepage" image-float="left" %}
+    {% include /components/features/features-split.html data="homepage" cluster="cluster-upload" image-float="left" %}
   </div>
 </section>
 
 <section class="py-5">
   <div class="container">
-    {% include /components/features/features-grid.html data="homepage" %}
+    {% include /components/features/features-split.html data="homepage" cluster="cluster-teams" image-float="left" %}
   </div>
 </section>
 
+<section class="py-5">
+  <div class="container">
+    {% include /components/features/features-grid.html data="homepage" cluster="cluster-visual" %}
+  </div>
+</section>
+upload
+teams
+testimonial
+chat
+final ctasfinal selling points
 
 <section class="py-5">
   <div class="container">

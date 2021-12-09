@@ -1,0 +1,38 @@
+{% assign content-lookup = site.data.components.features.controller.[include.data][include.cluster] %}
+{% assign image-float = site.data.components.features.controller.[include.image-float] %}
+
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center justify-content-between mb-8 mb-md-11">
+            <div class="col-12 text-center mb-3">
+                {% for text in content-lookup.support-copy %}
+                <a class="btn-small-white" href="/pricing/" role="button">{{text[1].item}}</a>
+                {% endfor %}
+            </div>
+            <div class="col-12 col-lg-5 order-2 order-lg-1">
+                <h2>{{content-lookup.headline}}</h2>
+                <p class="my-5">
+                    {{content-lookup.sub-copy}}
+                </p>
+                {% if content-lookup.primary-cta %}
+                    {% if content-lookup.primary-cta contains "https" %}
+                    <a class="btn-large-red" href="{{content-lookup.primary-cta}}" role="button">Try Sortly Free</a>
+                    {% else %}
+                    <a class="btn-large-red" href="{{ site.data.links.registration-links.controller[content-lookup.primary-cta].href}}" role="button">Try Sortly Free</a>
+                    {% endif %}
+                {% endif %}
+                {% if content-lookup.secondary-cta %}
+                    {% if content-lookup.secondary-cta contains "https" %}
+                    <a class="btn-large-white" href="{{content-lookup.secondary-cta}}" role="button">Try Sortly Free</a>
+                    {% else %}
+                    <a class="btn-large-white" href="{{ site.data.links.registration-links.controller[content-lookup.secondary-cta].href}}" role="button">Try Sortly Free</a>
+                    {% endif %}
+                {% endif %}
+    </div>
+    <div class="col-12 col-lg-7 order-1 order-lg-2" data-aos="fade-right">
+        <img class="img-fluid" src="/assets/images/hero/construction-worker@2x.png" />
+    </div>
+
+        </div>
+    </div>
+</section>

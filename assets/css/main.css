@@ -11275,7 +11275,7 @@ h1 {
   }
 
 
-.btn-hero{
+.btn-large-red{
     background: #DD2A3B;
     border: 1px solid rgba(167, 167, 187, 0.15);
     box-sizing: border-box;
@@ -11294,9 +11294,9 @@ h1 {
     text-decoration: none;
 }
 
-.btn-hero-light{
+.btn-large-white{
   background: #ffffff;
-  border: 1px solid rgba(167, 167, 187, 0.15);
+  border: 1px solid #707081;
   box-sizing: border-box;
   border-radius: 6px;
   font-family: sans-serif;
@@ -11314,11 +11314,35 @@ h1 {
 }
 
 
-.btn-hero-light:hover{
+.btn-large-white:hover{
   color: #000000 ;
 }
 
-.btn-hero:hover{
+.btn-small-white{
+  background: #ffffff;
+  border: 1px solid #707081;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  padding: 14px 24px;
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.btn-small-white:hover{
+  color: #000000 ;
+}
+
+.btn-large-red:hover{
     color: #FFFFFF ;
 }
 a:hover, a:focus {
@@ -11357,7 +11381,6 @@ p.copyright{
   font-size: 14px;
 }
 
-body{margin-top:20px;}
  .pricing-content{}
 .single-pricing{
 background:#fff;
@@ -11431,4 +11454,8 @@ margin-top: 30px;
 
 .single-pricing ul{
   padding:0;
+}
+
+.bg-white{
+  background-color: #ffffff;
 }

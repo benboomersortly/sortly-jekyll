@@ -13,17 +13,50 @@ automotive:
     4:
       item: "Quickly review everything you’ve got in stock—on-site or at another location"
 
+
 homepage:
-  headline: "Visualize all your auto parts on your Sortly dashboard"
-  sub-copy: "Sortly’s auto parts inventory management software ensures you know exactly what’s where, and how much you’ve got."
-  support-copy:
-    0: 
-      item: "Use Sortly on your phone, tablet, or computer—from anywhere, anytime"
-    1: 
-      item: "Upload high-resolution photos for everything from windshield wipers to tires"
-    2:
-      item: "Create custom fields to track every detail "
-    3:
-      item: "Decide exactly how you’d like to organize your inventory"
-    4:
-      item: "Quickly review everything you’ve got in stock—on-site or at another location"
+  cluster-big-story:
+    headline: "Simplify work and get more done."
+    sub-copy: "See everything at a glance and stay up-to-date."
+    primary-cta: "free-flow"
+    secondary-cta: "https://www.sortly.com/pricing/"
+    support-copy:
+      0: 
+        item: "Dashboard"
+      1: 
+        item: "Details"
+      2:
+        item: "Collaboration"
+      3:
+        item: "Reporting"
+  cluster-visual:
+    headline: "Visual all your auto parts on your Sortly dashboard"
+    sub-copy: "Sortly’s auto parts inventory management software ensures you know exactly what’s where, and how much you’ve got."
+    support-copy:
+      0: 
+        item: "Use Sortly on your phone, tablet, or computer—from anywhere, anytime"
+      1: 
+        item: "Upload high-resolution photos for everything from windshield wipers to tires"
+      2:
+        item: "Create custom fields to track every detail "
+      3:
+        item: "Decide exactly how you’d like to organize your inventory"
+      4:
+        item: "Quickly review everything you’ve got in stock—on-site or at another location"
+  cluster-upload:
+    headline: "Visual all your auto parts on your Sortly dashboard"
+    sub-copy: "Sortly’s auto parts inventory management software ensures you know exactly what’s where, and how much you’ve got."
+  cluster-teams:
+    headline: "Team all your auto parts on your Sortly dashboard"
+    sub-copy: "Sortly’s auto parts inventory management software ensures you know exactly what’s where, and how much you’ve got."
+    support-copy:
+      0: 
+        item: "Use Sortly on your phone, tablet, or computer—from anywhere, anytime"
+      1: 
+        item: "Upload high-resolution photos for everything from windshield wipers to tires"
+      2:
+        item: "Create custom fields to track every detail "
+      3:
+        item: "Decide exactly how you’d like to organize your inventory"
+      4:
+        item: "Quickly review everything you’ve got in stock—on-site or at another location"
