@@ -9,7 +9,13 @@
 
     </div>
     <div class="col-12 offset-lg-1 col-lg-6 my-auto">
+        {% if content-lookup.rich-content.img %}
+        <img class="img-fluid" src="{{content-lookup.rich-content.img}}" />
+        {% elsif content-lookup.rich-content.video %}
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{site.data.videos.controller[include.data].embed}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% else %}
         <img class="img-fluid" src="/assets/images/hero/construction-worker@2x.png" />
+        {% endif %}
     </div>
 </div>
 

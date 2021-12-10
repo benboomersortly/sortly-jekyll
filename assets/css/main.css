@@ -11396,3 +11396,8 @@ p.copyright{
 .pricing-card-product-name{
   
 }
+
+body
+{
+   position: relative;
+}

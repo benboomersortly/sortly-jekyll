@@ -7,12 +7,10 @@ layout: component-gallery
 <section>
     <div class="container">
         <h1>👋 Welcome to the Component Gallery!</h1>
-        <p>Data + Components = Webpage</p>
+        <p>Structured Content + Components = Webpage</p>
     </div>
 </section>
-<section>
-    nav here
-</section>
+
 
 <!--
 <section class="py-4">
@@ -36,11 +34,14 @@ layout: component-gallery
     </div>
     <div class="container my-5">
         <h3><code style="background:#8dff0f;color:black;padding:5px;">Standard</code></h3>
-        {% include /components/heroes/standard-hero.html data="component-gallery-2" cluster="component-gallery-2" %}
+        {% include /components/heroes/standard-hero.html data="component-gallery-2" cluster="component-gallery" %}
 
     </div>
     <div class="container my-5">
-        <h3><code style="background:#8dff0f;color:black;padding:5px;">Standard w/Bullets</code></h3>
+        {% include /components/heroes/standard-hero.html data="component-gallery" cluster="component-gallery" %}
+
+    </div>
+    <div class="container my-5">
         {% include /components/heroes/standard-hero.html data="component-gallery" cluster="component-gallery" %}
 
     </div>

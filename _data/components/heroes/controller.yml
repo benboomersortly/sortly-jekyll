@@ -28,3 +28,5 @@ component-gallery:
 component-gallery-2: 
   headline: "The smartest automotive inventory software. "
   sub-copy: "Sortly’s inventory management software ensures you know exactly what’s where, and how much you’ve got."
+  rich-content:
+    video: true
