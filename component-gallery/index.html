@@ -1,12 +1,13 @@
 ---
 title: Component Gallery
 description: This is where we showcase our components.
-layout: standard-page
+layout: component-gallery
 ---
+
 <section>
     <div class="container">
         <h1>👋 Welcome to the Component Gallery!</h1>
-        <p>Components? Components are snippets of code that we code once to reduce manual copy/paste work. These components are then populated with filtered content (data) from our YAML files.</p>
+        <p>Data + Components = Webpage</p>
     </div>
 </section>
 <section>
@@ -16,7 +17,7 @@ layout: standard-page
 <!--
 <section class="py-4">
     <div class="container">
-        <h2 class="border-bottom">Navigations</h2>
+        <h2 >Navigations</h2>
     </div>
     <div class="container py-3">
         <h3>Standard</h3>
@@ -29,25 +30,89 @@ layout: standard-page
 -->
 
 <section class="py-4">
-    <div class="container">
-        <h2 class="border-bottom">Heroes</h2>
+    <div id="heroes" class="container">
+        <h2 >Heroes</h2>
+        <p class="border-bottom">Hero components set the tone of the page for the user, quickly.</p>
     </div>
-    <div class="container py-3">
-        <h3>Standard</h3>
+    <div class="container my-5">
+        <h3><code style="background:#8dff0f;color:black;padding:5px;">Standard</code></h3>
+        {% include /components/heroes/standard-hero.html data="component-gallery-2" cluster="component-gallery-2" %}
+
+    </div>
+    <div class="container my-5">
+        <h3><code style="background:#8dff0f;color:black;padding:5px;">Standard w/Bullets</code></h3>
         {% include /components/heroes/standard-hero.html data="component-gallery" cluster="component-gallery" %}
+
+    </div>
+    <div class="container my-5">
+        <h3><code style="background:#8dff0f;color:black;padding:5px;">Text Only</code></h3>
+        {% include /components/heroes/text-only.html data="component-gallery" cluster="component-gallery" %}
+
+    </div>
+    <div class="container my-5">
+        <h3><code style="background:#8dff0f;color:black;padding:5px;">BIG Image</code></h3>
+        {% include /components/heroes/big-image.html data="component-gallery" cluster="component-gallery" %}
 
     </div>
 </section>
 
 <section>
-    <div class="container">
-        <h2>Features</h2>
+    <div id="features" class="container">
+        <h2 >Features</h2>
+        <p class="border-bottom">Feature components showcase the features and benefits of Sortly no matter how much (or little) content we have.</p>
+
     </div>
+
+    <div class="container my-5">
+        <h3><code style="background:#8dff0f;color:black;padding:5px;">Split</code></h3>
+        {% include /components/features/features-split.html data="homepage" cluster="cluster-teams" image-float="left" %}
+
+    </div>
+
+    <div class="container my-5">
+        <h3><code style="background:#8dff0f;color:black;padding:5px;">Grid</code></h3>
+        {% include /components/features/features-grid.html data="homepage" cluster="cluster-teams" image-float="left" %}
+
+    </div>
+
+    <div class="container my-5">
+        <h3><code style="background:#8dff0f;color:black;padding:5px;">BIG Story</code></h3>
+        {% include /components/features/big-story.html data="homepage" cluster="cluster-big-story" %}
+    </div>
+
+
 </section>
 
 <section>
     <div class="container">
         <h2>Pricing</h2>
+        <p class="border-bottom">Pricing components display our product prices and plan features accurately, with user context in mind. </p>
+     </p>
+
+    </div>
+    <div class="container my-5">
+        <h3><code style="background:#8dff0f;color:black;padding:5px;">4-Across Cards</code></h3>
+        {% include /components/pricing/4-across-cards.html %}
+    </div>
+
+    <div class="container my-5">
+        <h3><code style="background:#8dff0f;color:black;padding:5px;">3-Across Cards</code></h3>
+        {% include /components/pricing/3-across-cards.html %}
+    </div>
+
+    <div class="container my-5">
+        <h3><code style="background:#8dff0f;color:black;padding:5px;">Comparison Table</code></h3>
+        {% include /components/pricing/comparison-table.html %}
+    </div>
+
+    <div class="container my-5">
+        <h3><code style="background:#8dff0f;color:black;padding:5px;">Pricing & Discount Controls</code></h3>
+        {% include /components/pricing/pricing-controls-example.html %}
+    </div>
+
+    <div class="container my-5">
+        <h3><code style="background:#8dff0f;color:black;padding:5px;">Linking Controls</code></h3>
+        {% include /components/pricing/linking-controls-example.html %}
     </div>
 </section>
 

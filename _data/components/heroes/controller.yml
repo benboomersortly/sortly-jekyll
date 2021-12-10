@@ -10,8 +10,8 @@ automotive:
       item: "Easily track expiration dates and warranty ends"
     2: 
       item: "Find out what’s where in an instant, even across multiple shops"
-  headline: "The smartest automotive inventory software. Ever."
-  sub-copy: "Sortly’s auto parts inventory management software ensures you know exactly what’s where, and how much you’ve got."
+  headline: "The smartest automotive inventory software. "
+  sub-copy: "Sortly’s inventory management software ensures you know exactly what’s where, and how much you’ve got."
 
 
 component-gallery: 
@@ -22,5 +22,9 @@ component-gallery:
       item: "Easily track expiration dates and warranty ends"
     2: 
       item: "Find out what’s where in an instant, even across multiple shops"
-  headline: "The smartest automotive inventory software. Ever."
-  sub-copy: "Sortly’s auto parts inventory management software ensures you know exactly what’s where, and how much you’ve got."
+  headline: "The smartest automotive inventory software. "
+  sub-copy: "Sortly’s inventory management software ensures you know exactly what’s where, and how much you’ve got."
+
+component-gallery-2: 
+  headline: "The smartest automotive inventory software. "
+  sub-copy: "Sortly’s inventory management software ensures you know exactly what’s where, and how much you’ve got."

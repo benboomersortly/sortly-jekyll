@@ -1,0 +1,13 @@
+{% assign content-lookup = site.data.components.heroes.controller.[include.data] %}
+
+<div class="row pt-5">
+    <div class="col-12 text-center">
+        <h1>{{content-lookup.headline}}</h1>
+        <p class="description pt-4">{{content-lookup.sub-copy}}</p>
+        <a id="{{page.url}}-primary-hero-cta" class="btn-large-red" href="{{site.data.links.registration-links.controller.free-flow.href}}" role="button">Try Sortly Free</a>
+        <a id="{{page.url}}-secondary-hero-cta" class="btn-large-white" href="/pricing/" role="button">See All Plans</a>
+
+    </div>
+
+</div>
+

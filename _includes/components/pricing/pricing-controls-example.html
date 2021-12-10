@@ -1,0 +1,67 @@
+<section class="pt-5">
+	<div class="container">
+		<table class="table">
+			<thead style="background-color:white;" class="thead-dark sticky-top">
+			  <tr>
+				<th scope="col">&nbsp;</th>
+				<th scope="col">FREE</th>
+				<th scope="col">ADVANCED</th>
+				<th scope="col">ULTRA</th>
+				<th scope="col">ENTERPRISE</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<th scope="row">Normal Monthly Price</th>
+				<td>${{site.data.pricing.controller.free.price-standard.monthly | round}}/mo</td>
+				<td>${{site.data.pricing.controller.advanced.price-standard.monthly | round}}/mo</td>
+				<td>${{site.data.pricing.controller.ultra.price-standard.monthly | round}}/mo</td>
+				<td>{{site.data.pricing.controller.enterprise.price-standard.monthly}}</td>
+			  </tr>
+			  <tr>
+				<th scope="row">Normal Yearly Price</th>
+				<td>${{site.data.pricing.controller.free.price-standard.yearly | round}}/mo</td>
+				<td>${{site.data.pricing.controller.advanced.price-standard.yearly | round}}/mo</td>
+				<td>${{site.data.pricing.controller.ultra.price-standard.yearly | round}}/mo</td>
+				<td>{{site.data.pricing.controller.enterprise.price-standard.yearly}}</td>
+			  </tr>
+			  <tr>
+				<th scope="row">Is there a discount?</th>
+				<td>{% if site.data.pricing.controller.free.price-discounted %}Yes{% else %} No{% endif %}</td>
+				<td>{% if site.data.pricing.controller.advanced.price-discounted %}Yes{% else %} No{% endif %}</td>
+				<td>{% if site.data.pricing.controller.ultra.price-discounted %}Yes{% else %} No{% endif %}</td>
+				<td>{% if site.data.pricing.controller.enterprise.price-discounted %}Yes{% else %} No{% endif %}</td>
+			  </tr>
+			  <tr>
+				<th scope="row">Discounted Yearly Price</th>
+				<td>Larry</td>
+				<td>the Bird</td>
+				<td>@twitter</td>
+				<td>@mdo</td>
+			  </tr>
+			  <tr>
+				<th scope="row">Discount percentage off vs. monthly</th>
+				<td>Larry</td>
+				<td>the Bird</td>
+				<td>@twitter</td>
+				<td>@mdo</td>
+			  </tr>
+			  <tr>
+				<th scope="row">Discount annual savings vs. monthly</th>
+				<td>Larry</td>
+				<td>the Bird</td>
+				<td>@twitter</td>
+				<td>@mdo</td>
+			  </tr>
+			  <tr>
+				<th scope="row">Rebill amount after term ends</th>
+				<td>Larry</td>
+				<td>the Bird</td>
+				<td>@twitter</td>
+				<td>@mdo</td>
+			  </tr>
+			  
+			</tbody>
+		  </table>
+	</div>
+</section>

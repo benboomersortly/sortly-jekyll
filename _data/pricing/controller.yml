@@ -1,0 +1,33 @@
+global-discount:
+  discount: 
+    percent-off: 20
+    text: "This is what the text will be"
+
+free:
+  name: "free"
+  price-standard:
+    monthly: 0
+    yearly: 0
+
+advanced:
+  name: "advanced"
+  price-standard:
+    monthly: 49
+    yearly: 39.20
+  price-discounted:
+    yearly: 25
+
+ultra:
+  name: "ultra"
+  price-standard:
+    monthly: 119
+    yearly: 95.20
+  price-discounted:
+    yearly: 59
+
+enterprise:
+  name: "enterprise"
+  price-standard:
+    monthly: "Custom"
+    yearly: "Custom"
+

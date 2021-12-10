@@ -1,0 +1,11 @@
+{% assign content-lookup = site.data.components.heroes.controller.[include.data] %}
+
+<div class="row pt-5 text-center">
+    <div class="col-12">
+        <h1>{{content-lookup.headline}}</h1>
+        <p class="description pt-4">{{content-lookup.sub-copy}}</p>
+    </div>
+    <div class="col-12">
+        <img class="img-fluid" src="/assets/images/hero/screen-big.png" />
+    </div>
+</div>

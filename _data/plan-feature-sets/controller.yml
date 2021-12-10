@@ -1,0 +1,31 @@
+free:
+  name: "free"
+  best-for: "Perfect for individuals or new businesses that need to keep track of all their stuff!"
+  cta-text: "Sign Up"
+  card-feature-set:
+    0: 100 Entries
+    1: 1 User License
+    2: 1 Custom Field
+  table-feature-set: test
+
+advanced:
+  name: "advanced"
+  price-standard:
+    monthly: 49
+    yearly: 39.20
+  price-discounted:
+    yearly: 25
+
+ultra:
+  name: "ultra"
+  price-standard:
+    monthly: 119
+    yearly: 95.20
+  price-discounted:
+    yearly: 59
+
+enterprise:
+  name: "enterprise"
+  price-standard:
+    monthly: "Custom"
+    yearly: "Custom"

@@ -11,13 +11,15 @@
                 </p>
         <div class="row">
         <div class="col-12">
+            <ul>
             {% for feature-bullet-list in content-lookup.support-copy %}
-            <div class="d-flex">
-            <p class="feature-bullets">
-                <p>{{feature-bullet-list[1].item}}</p>
-            </p>
-            </div>
+
+
+                <li class="py-1">   {{feature-bullet-list[1].item}}</li>
+
+
             {% endfor %}
+            </ul>
         </div>
         </div>
     </div>
